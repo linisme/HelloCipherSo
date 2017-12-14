@@ -12,6 +12,8 @@ import android.view.MenuItem;
 
 import net.idik.lib.cipher.so.CipherClient;
 
+import java.sql.ClientInfoStatus;
+
 public class MainActivity extends AppCompatActivity {
 
     // Used to load the 'native-lib' library on application startup.
@@ -37,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Example of a call to a native method
         TextView tv = (TextView) findViewById(R.id.sample_text);
-        tv.setText(stringFromJNI() + "\n\n" + CipherClient.hello());
+        tv.setText(stringFromJNI() + "\n\n" + CipherClient.hello() + "\n\n" + CipherClient.数据库密码());
     }
 
     @Override

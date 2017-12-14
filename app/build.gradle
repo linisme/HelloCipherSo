@@ -2,7 +2,6 @@ buildscript {
     repositories {
         google()
         jcenter()
-        maven { url "https://dl.bintray.com/idik-net/Cipher.so" }
     }
     dependencies {
         classpath 'net.idik.lib.security:cipher.so:0.0.2'
@@ -53,7 +52,10 @@ dependencies {
 cipher.so {
     keys {
         hello {
-            value = '你好，Cipher.so😊'
+            value = 'Hello From Cipher.so😊'
+        }
+        数据库密码 {
+            value = '今天天气不错😂😂'
         }
     }
 }
