@@ -1,10 +1,13 @@
 buildscript {
     repositories {
         google()
+        maven {
+            url uri('../../../../CipherSo/repo')
+        }
         jcenter()
     }
     dependencies {
-        classpath 'net.idik.lib.security:cipher.so:0.0.2'
+        classpath 'net.idik.lib.security:cipher.so:0.0.3'
     }
 }
 
