@@ -7,7 +7,7 @@ buildscript {
     }
     dependencies {
 //        classpath 'net.idik.lib.security:cipher.so:0.0.4'
-        classpath 'com.github.MEiDIK:Cipher.so:master-SNAPSHOT'
+        classpath 'com.github.MEiDIK:Cipher.so:dev-SNAPSHOT'
     }
 }
 
