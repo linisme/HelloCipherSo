@@ -1,13 +1,13 @@
 buildscript {
     repositories {
         google()
-        maven {
-            url uri('../../../../CipherSo/repo')
-        }
+//        maven { url uri('../../../../CipherSo/repo') }
+        maven { url 'https://jitpack.io' }
         jcenter()
     }
     dependencies {
-        classpath 'net.idik.lib.security:cipher.so:0.0.3'
+//        classpath 'net.idik.lib.security:cipher.so:0.0.4'
+        classpath 'com.github.MEiDIK:Cipher.so:master-SNAPSHOT'
     }
 }
 

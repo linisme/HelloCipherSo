@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Example of a call to a native method
         TextView tv = (TextView) findViewById(R.id.sample_text);
+        String dbKey = CipherClient.数据库密码();
         tv.setText(stringFromJNI() + "\n\n" + CipherClient.hello() + "\n\n" + CipherClient.数据库密码());
     }
 
